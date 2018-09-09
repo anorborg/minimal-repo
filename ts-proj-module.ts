@@ -1,2 +1,2 @@
 export const HELLO = 'Hello'
-export const WORLD = 'Word'
+export const WORLD = 'World'
