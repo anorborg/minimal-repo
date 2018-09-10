@@ -1,5 +1,8 @@
 {
-  "compilerOptions": {
-    "strict": true
-  }
+  "extends": "./config/tsconfig.base",
+  "include": [
+    "./app/**/*.ts",
+    "./main.ts",
+    "./tests/**/*.ts"
+  ]
 }

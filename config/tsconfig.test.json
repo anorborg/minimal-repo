@@ -1,0 +1,10 @@
+{
+    "extends": "./tsconfig.app",
+    "compilerOptions": {
+        "module": "commonjs"
+    },
+    "include": [
+        "../app/**/*.ts",
+        "../tests/**/*.ts"
+    ]
+}

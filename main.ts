@@ -1,7 +1,7 @@
 import {
     HELLO,
     WORLD
-} from './ts-proj-module'
+} from '@app/modules/ts-proj-module'
 
 function buildHello () {
     return `${HELLO} ${WORLD}!`

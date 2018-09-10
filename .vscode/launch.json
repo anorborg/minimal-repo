@@ -7,10 +7,30 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Debug TS Main",
-            "runtimeArgs": ["--nolazy", "-r", "ts-node/register"],
+            "name": "Debug TS App",
+            "runtimeArgs": [
+                "--nolazy",
+                "-r", "ts-node/register",
+                "-r", "tsconfig-paths/register"
+            ],
             "args": ["main.ts"],
             "cwd": "${workspaceRoot}",
+            "protocol": "inspector"
+        },
+        {
+            "type": "node",
+            "name": "Debug TS Tests",
+            "request": "launch",
+            "program": "${workspaceFolder}/node_modules/jest/bin/jest",
+            "args": [
+                "--config",
+                "config/jest.config.js",
+                "--runInBand"
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "sourceMaps": false,
             "protocol": "inspector"
         }
     ]
