@@ -1,8 +1,13 @@
 {
   "extends": "./config/tsconfig.base",
+  "compilerOptions": {
+    "allowJs": true
+  },
   "include": [
     "./app/**/*.ts",
     "./main.ts",
-    "./tests/**/*.ts"
+    "./tests/**/*.ts",
+    "./config/**/*.ts",
+    "./config/**/*.js"
   ]
 }

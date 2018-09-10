@@ -10,11 +10,13 @@
             "name": "Debug TS App",
             "runtimeArgs": [
                 "--nolazy",
-                "-r", "ts-node/register",
-                "-r", "tsconfig-paths/register"
+                "--require", "./config/ts-node-app-register",
+                "--require", "tsconfig-paths/register"
             ],
-            "args": ["main.ts"],
-            "cwd": "${workspaceRoot}",
+            "args": [
+                "main.ts"
+            ],
+            "cwd": "${workspaceFolder}",
             "protocol": "inspector"
         },
         {
@@ -24,7 +26,7 @@
             "program": "${workspaceFolder}/node_modules/jest/bin/jest",
             "args": [
                 "--config",
-                "config/jest.config.js",
+                "config/jest.config.json",
                 "--runInBand"
             ],
             "cwd": "${workspaceFolder}",
