@@ -1,0 +1,16 @@
+{
+    "editor.rulers": [80],
+    "editor.tabSize": 2,
+    "eslint.enable": false,
+    "json.schemas": [
+        {
+          "fileMatch": [
+              "tslint.json",
+              "tslint.*.json"
+          ],
+          "url": "http://json.schemastore.org/tslint"
+        }
+    ],
+    "tslint.autoFixOnSave": true,
+    "tslint.configFile": "config/tslint.ide.json"
+}
