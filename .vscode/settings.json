@@ -12,8 +12,9 @@
         }
     ],
     "tslint.autoFixOnSave": true,
-    "tslint.configFile": "config/tslint.ide.json",
+    "tslint.configFile": "_config/tslint.ide.json",
     "cSpell.words": [
-        "devtool"
+        "devtool",
+        "repo"
     ]
 }

@@ -3,5 +3,5 @@
 // 'ts-node/register' with './config/ts-node-app-register'
 
 require('ts-node').register({
-  project: './config/tsconfig.app.json'
+  project: './_config/tsconfig.app.json'
 })
