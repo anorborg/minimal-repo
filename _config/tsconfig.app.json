@@ -1,5 +1,5 @@
 {
-    "extends": "./tsconfig.base",
+    "extends": "./tsconfig.common",
     "include": [
         "../app/**/*.ts",
         "../main.ts"

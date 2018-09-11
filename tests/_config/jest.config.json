@@ -1,8 +1,8 @@
 {
-  "rootDir": "../",
+  "rootDir": "../../",
   "globals": {
     "ts-jest": {
-      "tsConfigFile": "./config/tsconfig.test.json"
+      "tsConfigFile": "./_config/tsconfig.test.json"
     }
   },
   "transform": {

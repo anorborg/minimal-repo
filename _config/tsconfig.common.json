@@ -2,6 +2,7 @@
     "compilerOptions": {
         "strict": true,
         "baseUrl": "../",
+        "target": "es5",
         "paths": {
             "@app/*": ["app/*"]
         }

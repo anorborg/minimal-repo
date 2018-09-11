@@ -2,15 +2,15 @@
   "name": "minimal-repo",
   "version": "1.0.0",
   "description": "",
-  "main": "main.ts",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/anorborg/minimal-repo.git"
   },
   "scripts": {
-    "lint": "tslint --config config/tslint.json --project tsconfig.json",
-    "debug-ts": "node --nolazy --require ./config/ts-node-app-register --require tsconfig-paths/register main.ts",
-    "test": "jest --clearCache && jest --config config/jest.config.json"
+    "lint": "tslint --config _config/tslint.ide.json --project tsconfig.json",
+    "run-ts": "node --nolazy --require ./_config/ts-node-app-register --require tsconfig-paths/register main.ts",
+    "test": "jest --clearCache && jest --config tests/_config/jest.config.json"
   },
   "author": "",
   "license": "ISC",
