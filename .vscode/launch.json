@@ -7,6 +7,17 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "Debug Dist App",
+            "program": "${workspaceFolder}/main.ts",
+            "cwd": "${workspaceFolder}",
+            "outFiles": [ "${workspaceRoot}/dist/bundle.js" ],
+            "protocol": "inspector",
+            "sourceMaps": true,
+            "preLaunchTask": "npm: compile"
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "Debug TS App",
             "runtimeArgs": [
                 "--nolazy",

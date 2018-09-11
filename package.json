@@ -8,7 +8,10 @@
     "url": "https://github.com/anorborg/minimal-repo.git"
   },
   "scripts": {
+    "compile": "webpack --config build/_config/webpack.config.dev.ts",
+    "compile-prod": "webpack --config build/_config/webpack.config.prod.ts",
     "lint": "tslint --config _config/tslint.ide.json --project tsconfig.json",
+    "run": "node --nolazy dist/bundle.js",
     "run-ts": "node --nolazy --require ./_config/ts-node-app-register --require tsconfig-paths/register main.ts",
     "test": "jest --clearCache && jest --config tests/_config/jest.config.json"
   },
@@ -16,13 +19,20 @@
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^23.3.2",
-    "jest": "^23.5.0",
+    "@types/node": "^10.9.4",
+    "@types/webpack": "^4.4.11",
+    "@types/webpack-merge": "^4.1.3",
+    "jest": "^23.6.0",
     "ts-jest": "^23.1.4",
+    "ts-loader": "^5.1.0",
     "ts-node": "^7.0.1",
-    "tsconfig-paths": "^3.5.0",
+    "tsconfig-paths": "^3.6.0",
     "tslint": "^5.11.0",
     "tslint-config-standard": "^8.0.1",
-    "typescript": "^3.0.3"
+    "typescript": "^3.0.3",
+    "webpack": "^4.18.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-merge": "^4.1.4"
   },
   "dependencies": {}
 }
